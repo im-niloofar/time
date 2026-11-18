@@ -1,0 +1,19 @@
+{
+  "name": "mohan-time",
+  "version": "1.0.0",
+  "description": "Mohan Time - Android app (Capacitor)",
+  "private": true,
+  "scripts": {
+    "icons": "capacitor-assets generate --android --iconBackgroundColor #16244a",
+    "sync": "cap sync android",
+    "apk": "cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/core": "^8.6.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^4.0.0",
+    "@capacitor/cli": "^8.6.0"
+  }
+}

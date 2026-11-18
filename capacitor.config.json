@@ -1,0 +1,8 @@
+{
+  "appId": "com.mohan.time",
+  "appName": "Mohan Time",
+  "webDir": "www",
+  "backgroundColor": "#16244a",
+  "server": { "androidScheme": "https" },
+  "android": { "allowMixedContent": false }
+}
