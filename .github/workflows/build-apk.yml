@@ -26,12 +26,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Generate Android icons
-        run: npm run icons
+      - name: Add Android platform
+        run: npx cap add android
 
-      - name: Add Android platform (first time only)
-        run: |
-          if [ ! -d android ]; then npx cap add android; fi
+      - name: Generate Android icons
+        run: npx capacitor-assets generate --android --iconBackgroundColor "#16244a"
 
       - name: Sync web assets to Android
         run: npx cap sync android
@@ -47,3 +46,4 @@ jobs:
         with:
           name: mohan-time-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
+          
